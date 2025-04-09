@@ -1,7 +1,7 @@
 import { useState } from "react";
-import SearchBar from "../components/SearchBar/SearchBar.jsx";
-import UserCard from "../components/UserCard/UserCard.jsx";
-import ErrorMessage from "../components/UserCard/UserCard.jsx";
+import SearchBar from "../../components/SearchBar/SearchBar.jsx";
+import UserCard from "../../components/UserCard/UserCard.jsx";
+import ErrorMessage from "../../components/ErrorMessage/ErrorMessage.jsx";
 
 const Home = () => {
   const [userName, setUserName] = useState("");
