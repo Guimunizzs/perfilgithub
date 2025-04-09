@@ -1,4 +1,5 @@
 import styles from "./SearchBar.module.css";
+import { FaSearch } from "react-icons/fa";
 
 const SearchBar = ({ value, onChange, onSearch }) => {
   return (
@@ -10,8 +11,12 @@ const SearchBar = ({ value, onChange, onSearch }) => {
         onChange={onChange}
         className={styles.input}
       />
-      <button onClick={onSearch} className={styles.button}>
-        Buscar
+      <button
+        onClick={onSearch}
+        className={styles.button}
+        aria-label="Buscar usuário"
+      >
+        <FaSearch />
       </button>
     </div>
   );
