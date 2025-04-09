@@ -1,0 +1,36 @@
+.searchBar {
+  position: relative;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 40px 10px 12px; /* espaço para o botão */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-weight: 600px;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000000;
+}
+
+.input::placeholder {
+  color: #000000; /* ou qualquer outra cor que quiser */
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #24292e;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #0366d6;
+}
