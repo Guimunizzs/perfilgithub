@@ -4,6 +4,7 @@ import UserCard from "../../components/UserCard/UserCard.jsx";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage.jsx";
 import styles from "./Home.module.css";
 import gitLogo from "../../assets/git.png";
+import dots from "../../assets/dots.png";
 
 const Home = () => {
   const [userName, setUserName] = useState("");
@@ -14,6 +15,11 @@ const Home = () => {
 
   return (
     <div className={styles.containerHome}>
+      <div
+        className={styles.dots}
+        style={{ backgroundImage: `url(${dots})` }}
+      ></div>{" "}
+      {/* Pontinhos no fundo */}
       <div className={styles.home}>
         <img src={gitLogo} alt="" />
         <SearchBar
