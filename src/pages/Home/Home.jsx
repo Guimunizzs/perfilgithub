@@ -2,6 +2,8 @@ import { useState } from "react";
 import SearchBar from "../../components/SearchBar/SearchBar.jsx";
 import UserCard from "../../components/UserCard/UserCard.jsx";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage.jsx";
+import styles from "./Home.module.css";
+import gitLogo from "../../assets/git.png";
 
 const Home = () => {
   const [userName, setUserName] = useState("");
@@ -11,14 +13,17 @@ const Home = () => {
   const handleSearch = async () => {};
 
   return (
-    <div className="home">
-      <SearchBar
-        value={userName}
-        onChange={(e) => setUserName(e.target.value)}
-        onSearch={handleSearch}
-      />
-      {error && <ErrorMessage message={error} />}
-      {userData && <UserCard data={userData} />}
+    <div className={styles.containerHome}>
+      <div className={styles.home}>
+        <img src={gitLogo} alt="" />
+        <SearchBar
+          value={userName}
+          onChange={(e) => setUserName(e.target.value)}
+          onSearch={handleSearch}
+        />
+        {error && <ErrorMessage message={error} />}
+        {userData && <UserCard data={userData} />}
+      </div>
     </div>
   );
 };
