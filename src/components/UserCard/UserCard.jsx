@@ -1,11 +1,11 @@
 import styles from "./UserCard.module.css";
 
-const UserCard = () => {
+const UserCard = ({ data }) => {
   return (
     <div className={styles.card}>
-      <img src={user.avatar_url} alt={user.name} />
-      <h2>{user.name}</h2>
-      <p>{user.bio}</p>
+      <img src={data.avatar_url} alt={data.name} />
+      <h2>{data.name}</h2>
+      <p>{data.bio}</p>
     </div>
   );
 };
