@@ -11,7 +11,25 @@ const Home = () => {
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState("");
 
-  const handleSearch = async () => {};
+  const handleSearch = async () => {
+    if (!userName) return;
+
+    try {
+      const response = await fetch(`https://api.github.com/users/${userName}`);
+
+      if (!response.ok) {
+        throw new Error("Usuário não encontrado");
+      }
+
+      const data = await response.json();
+      console.log(data);
+      setUserData(data);
+      setError("");
+    } catch (err) {
+      setError(err.message);
+      setUserData(null);
+    }
+  };
 
   return (
     <div className={styles.containerHome}>
