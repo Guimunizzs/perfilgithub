@@ -1,7 +1,13 @@
 import React from "react";
 
 const UserCard = () => {
-  return <div>UserCard</div>;
+  return (
+    <div className={styles.card}>
+      <img src={user.avatar_url} alt={user.name} />
+      <h2>{user.name}</h2>
+      <p>{user.bio}</p>
+    </div>
+  );
 };
 
 export default UserCard;
