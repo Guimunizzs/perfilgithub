@@ -1,12 +1,38 @@
-# React + Vite
+# GitHub Profile Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação React que permite buscar e exibir perfis de usuários do GitHub, com base no nome de usuário digitado.
 
-Currently, two official plugins are available:
+## 🔍 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Busca de usuário via API pública do GitHub
+- Exibição de:
+  - Foto de perfil
+  - Nome do usuário
+  - Bio
+- Mensagens de erro quando o usuário não for encontrado
+- Estilização customizada com base no layout do Figma
 
-## Expanding the ESLint configuration
+## 💻 Tecnologias
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- CSS Modules
+- Git Flow
+
+## 📦 Instalação
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+npm install
+npm run dev
+🧪 Como usar
+Digite um nome de usuário do GitHub no campo de busca e pressione o botão para ver os dados do perfil.
+
+📸 Layout
+Layout baseado em design do Figma (adicione link se tiver).
+
+🚀 Deploy
+(link para o projeto online se fizer deploy)
+
+```
