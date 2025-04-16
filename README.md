@@ -33,6 +33,6 @@ Digite um nome de usuário do GitHub no campo de busca e pressione o botão para
 Layout baseado em design do Figma (adicione link se tiver).
 
 🚀 Deploy
-(https://perfilgithub.vercel.app/)
+[Perfil GitHub](https://perfilgithub.vercel.app/)
 
 ```
